@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="Red México Soft <www.redmexico.com.mx>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr class="logo">
+    <td><img src="<{$xoops_imageurl}>images/logo.jpg" width="182" height="101"></td>
+    <td width="468" align="center" valign="middle"><{$xoops_banner}></td>
+    <td align="right" valign="top" nowrap="nowrap"><a href="<{$xoops_url}>"><img src="<{$xoops_imageurl}>images/top_home.jpg" width="38" height="24" border="0" /></a><a href="<{$xoops_url}>/search.php"><img src="<{$xoops_imageurl}>images/top_search.jpg" width="42" height="24" border="0" /></a><a href="<{$xoops_url}>/modules/mylinks"><img src="<{$xoops_imageurl}>images/top_links.jpg" width="36" height="24" border="0" /></a></td>
+  </tr>
+  <tr valign="top" class="post">
+    <td colspan="3" class="post"><a href="<{$xoops_url}>/modules/mydownloads"><img src="<{$xoops_imageurl}>images/nav_down.jpg" width="90" height="30" border="0"></a><a href="<{$xoops_url}>/modules/newbb"><img src="<{$xoops_imageurl}>images/nav_forum.jpg" width="90" height="30" border="0"></a><a href="<{$xoops_url}>/modules/xoopsfaq"><img src="<{$xoops_imageurl}>images/nav_faq.jpg" width="89" height="30" border="0"></a><a href="<{$xoops_url}>/modules/news"><img src="<{$xoops_imageurl}>images/nav_news.jpg" width="90" height="30" border="0"></a><a href="<{$xoops_url}>/modules/contact"><img src="<{$xoops_imageurl}>images/nav_contact.jpg" width="90" height="30" border="0"></a></td>
+  </tr>
+</table>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="block_left">
+	<{foreach item=block from=$xoops_lblocks}>
+        <{include file="rmforum/theme_blockleft.html"}>
+    <{/foreach}>
+	</td>
+    <td valign="top" style="padding: 2px; ">
+	<{$xoops_contents}>
+	<{foreach item=block from=$xoops_ccblocks}> <{include file="rmforum/theme_blockcenter.html"}> <{/foreach}>
+      <table width="100%"  border="0" cellspacing="2">
+        <tr valign="top">
+          <td width="50%"> <{foreach item=block from=$xoops_clblocks}> <{include file="rmforum/theme_blockcenter_lr.html"}> <{/foreach}> </td>
+          <td width="50%"> <{foreach item=block from=$xoops_crblocks}> <{include file="rmforum/theme_blockcenter_lr.html"}> <{/foreach}> </td>
+        </tr>
+      </table></td>
+    <td class="block_left">
+	<{foreach item=block from=$xoops_rblocks}>
+        <{include file="rmforum/theme_blockleft.html"}>
+    <{/foreach}>
+	</td>
+  </tr>
+</table>
+</body>
+</html>
